@@ -2,7 +2,8 @@
 
 using namespace std;
 
-class Node {
+class Node 
+{
 public:
     int data;
     Node *next;
@@ -13,3 +14,8 @@ public:
     }
 };
 
+// stack class
+class stack 
+{
+private:
+    Node *top;
