@@ -115,3 +115,10 @@ int main()
                 cout << "Stack is empty.No top value." << endl;
             }
             break;
+        case 4:
+            cout << "Exiting program." << endl;
+            return 0; // Menambahkan return agar program benar-benar berhenti
+        default:
+            cout << "invalid choice. Try again." << endl;
+            break;
+        }
