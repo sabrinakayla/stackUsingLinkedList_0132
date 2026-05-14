@@ -25,7 +25,6 @@ private:
     {
         top = NULL;
     }
-
      int push(int value) 
     {
         Node *newNode = new Node();
@@ -41,5 +40,10 @@ private:
         if (isEmpty()) 
          {
             cout << "Stack is empty." << endl;
-            return;
         }
+
+        Node *temp = top;
+        top = top->next;
+        cout << "Popped value: " << top->data << endl;
+    }
+
